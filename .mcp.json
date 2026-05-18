@@ -1,0 +1,6 @@
+{
+  "model-switcher": {
+    "command": "cc",
+    "args": ["mcp"]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "cc-model-switcher",
+  "version": "0.1.0",
+  "description": "Claude Code plugin and CLI to switch models from a live proxy model catalog",
+  "author": "Rashed Iqbal <https://github.com/iqbal-rashed>",
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-code-plugin",
+    "cli",
+    "mcp",
+    "anthropic",
+    "api",
+    "provider",
+    "switcher",
+    "kimi",
+    "qwen",
+    "deepseek",
+    "minimax",
+    "fireworks",
+    "llm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrichlaz/cc-model-switcher.git"
+  },
+  "homepage": "https://github.com/mrichlaz/cc-model-switcher#readme",
+  "bugs": {
+    "url": "https://github.com/mrichlaz/cc-model-switcher/issues"
+  },
+  "type": "module",
+  "main": "./dist/mcp.js",
+  "bin": {
+    "cc-model-switcher": "./dist/cli.js",
+    "cc": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "commands",
+    "data",
+    ".claude-plugin",
+    ".mcp.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "lint": "eslint src --fix",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "prettier": "^3.4.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "zod": "^3.23.8",
+    "@clack/prompts": "^1.0.0",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3"
+  }
+}

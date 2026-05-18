@@ -1,0 +1,32 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cc-model-switcher",
+  "description": "Claude Code model switcher with live proxy model fetch",
+  "owner": {
+    "name": "mrichlaz"
+  },
+  "plugins": [
+    {
+      "name": "model-switcher",
+      "source": "./",
+      "description": "Switch Claude Code model using a live proxy model list plus optional local metadata seed.",
+      "version": "0.1.0",
+      "author": {
+        "name": "mrichlaz"
+      },
+      "homepage": "https://github.com/mrichlaz/cc-model-switcher",
+      "repository": "https://github.com/mrichlaz/cc-model-switcher",
+      "license": "MIT",
+      "keywords": [
+        "mcp",
+        "model-switcher",
+        "models",
+        "route",
+        "proxy"
+      ],
+      "category": "workflow",
+      "tags": ["mcp", "model-switcher", "models", "proxy", "configuration"]
+    }
+  ],
+  "version": "0.1.0"
+}

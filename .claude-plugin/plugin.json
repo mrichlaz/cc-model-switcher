@@ -1,0 +1,24 @@
+{
+  "name": "model-switcher",
+  "version": "0.1.0",
+  "description": "Switch Claude Code model using a live proxy model list plus optional local metadata seed",
+  "author": {
+    "name": "mrichlaz"
+  },
+  "repository": "https://github.com/mrichlaz/cc-model-switcher",
+  "homepage": "https://github.com/mrichlaz/cc-model-switcher",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-code-plugin",
+    "mcp",
+    "model-switcher",
+    "models",
+    "route",
+    "proxy",
+    "settings-management",
+    "configuration"
+  ],
+  "commands": "./commands",
+  "mcpServers": "./.mcp.json"
+}
