@@ -33,7 +33,7 @@
   "main": "./dist/mcp.js",
   "bin": {
     "cc-model-switcher": "./dist/cli.js",
-    "cc": "./dist/cli.js"
+    "ccs": "./dist/cli.js"
   },
   "files": [
     "dist",
